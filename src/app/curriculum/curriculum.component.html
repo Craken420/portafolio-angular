@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>📄 CURRÍCULUM VITAE – Luis Angel Peña Zuñiga</h1>
+    <div class="sub">Líder Técnico en Desarrollo de Software</div>
+    <div class="sub">Especialista en Migraciones, Cloud Solutions y Biometría</div>
+
+    <p class="contact">
+        📍 Guadalajara, Jal. |
+        📧 <a href="mailto:pezu.luis01@gmail.com">pezu.luis01&#64;gmail.com</a> |
+        📱 3328247811
+    </p>
+    <p class="contact">
+        <a href="https://github.com/Craken420" target="_blank" class="icon-link github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/luis-angel-pe%C3%B1a-zu%C3%B1iga-707221188/" target="_blank" class="icon-link linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://stackoverflow.com/users/10688370/luis-angel-pena-zuniga" target="_blank" class="icon-link stackoverflow">
+          <i class="fab fa-stack-overflow"></i> Stack Overflow
+        </a>
+    </p>
+    <section *ngFor="let section of sections" class="section">
+      <h2>{{ section.icon }} {{ section.title }}</h2>
+      <ng-container [ngSwitch]="section.type">
+        <p *ngSwitchCase="'paragraph'">{{ section.content }}</p>
+        <ul *ngSwitchCase="'list'">
+          <li *ngFor="let item of section.items" [innerHTML]="item"></li>
+        </ul>
+        <div *ngSwitchCase="'projects'">
+          <div class="project" *ngFor="let project of section.projects">
+            <strong>{{ project.title }}:</strong> {{ project.description }}
+          </div>
+        </div>
+      </ng-container>
+    </section>
+  
+    <section>
+      <h2>⚙️ Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <ul *ngFor="let group of skills">
+          <li *ngFor="let skill of group">
+            <i [class]="skill.icon"></i> {{ skill.name }}
+          </li>
+        </ul>
+      </div>
+    </section>
+</div>
+  

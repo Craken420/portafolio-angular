@@ -1,0 +1,67 @@
+body, .container {
+    font-family: 'Inter', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
+  
+  .sub {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .contact {
+    font-size: 14px;
+    margin: 10px 0 20px;
+    color: #555;
+  }
+  
+  .icon-link {
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .github { color: #333; }
+  .linkedin { color: #0e76a8; }
+  .stackoverflow { color: #f48024; }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .project {
+    margin-bottom: 10px;
+  }
+  
