@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common'
   styleUrl: './curriculum.component.css'
 })
 export class CurriculumComponent {
-sections = [
+  sections = [
     {
       icon: '🧭',
       title: 'Perfil Profesional',
